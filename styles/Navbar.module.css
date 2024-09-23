@@ -1,0 +1,75 @@
+/* NavBar styles */
+
+.PanelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  box-sizing: border-box;
+  top: -1px;
+}
+
+.search input {
+  background-color: #2c2c2c;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #fff;
+  outline: none;
+}
+
+.search input::placeholder {
+  color: #aaa;
+}
+
+.menuItems {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menuItems span {
+  color: #ccc;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.connectWallet {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.connectWallet:hover {
+  background-color: #135abe;
+}
+
+.menuIcon {
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Add this at the bottom of your CSS */
+
+@media (max-width: 768px) {
+  .search {
+    display: none; /* Hide search on smaller screens */
+  }
+
+  .menuItems {
+    gap: 8px;
+  }
+
+  .connectWallet {
+    padding: 6px 12px;
+  }
+
+  .menuIcon {
+    font-size: 28px;
+  }
+}
