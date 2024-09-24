@@ -44,7 +44,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div>
+    <div className="py-2">
       <Container>
         <div className={navStyles.PanelHeader}>
           {/* Left Panel NavBar - Logo -  Brand */}
@@ -106,8 +106,25 @@ const Navbar = () => {
 
           {/* Middle Panel NavBar - Search - Pearls */}
           <div className={navStyles.PanelHeader_middle}>
-            <div className={navStyles.search}>
-              <input type="text" placeholder="Name or description" />
+            <div className={navStyles.searchBar}>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.75 3.5a7.25 7.25 0 0 1 5.785 11.62l4.172 4.173a1 1 0 0 1-1.414 1.414l-4.173-4.172A7.25 7.25 0 1 1 10.75 3.5zm0 2a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <input
+                type="text"
+                autoCapitalize="off"
+                autoComplete="off"
+                placeholder={`Name or description`}
+              />
             </div>
             <span>Pearls</span>
           </div>

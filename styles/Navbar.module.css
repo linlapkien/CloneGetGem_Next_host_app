@@ -6,21 +6,63 @@
   align-items: center;
   position: sticky;
   box-sizing: border-box;
-  top: -1px;
 }
 
-.search input {
-  background-color: #2c2c2c;
+/* Left Side (Logo) */
+.PanelHeader_left {
+  display: flex;
+  align-items: center;
+}
+
+/* middle header panel.module.css */
+.PanelHeader_middle {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Adds space between search input and Pearls */
+  flex: 1; /* Take available space */
+  padding-left: 24px;
+  padding-right: 32px;
+}
+
+.searchBar {
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #2c2c2c; /* Matches dark background */
+  border-radius: 15px; /* Rounded corners */
+  max-width: 300px; /* Adjust width if needed */
+  color: #aaa; /* Placeholder color */
+  transition: border 0.3s ease; /* Smooth transition */
+}
+
+.searchBar input {
+  background-color: transparent; /* No background for input */
   border: none;
-  padding: 8px 16px;
-  border-radius: 8px;
+  padding: 10px 14px;
   color: #fff;
+  font-size: 16px;
   outline: none;
+  width: 250px; /* Adjust width as needed */
 }
 
-.search input::placeholder {
-  color: #aaa;
+.searchBar:focus-within {
+  border-color: #1e8afe; /* Blue outline on focus */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* Focus shadow */
 }
+
+.PanelHeader_middle span {
+  color: #ccc;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.PanelHeader_middle span:hover {
+  color: #fff; /* Lightens color on hover */
+}
+
+/* Right header panel.module.css */
 
 .menuItems {
   display: flex;
